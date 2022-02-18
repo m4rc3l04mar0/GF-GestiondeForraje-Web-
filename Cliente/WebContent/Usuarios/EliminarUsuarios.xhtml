@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+	<title>Eliminar Usuarios</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</h:head> 
+<h:body> 
+		<div id="container">
+		<div id="header"><h1>Eliminar Usuarios</h1></div>
+		<div id="mainContent">
+			<div id="sidebar">
+<h:form>
+	<p:menu>
+		<p:submenu label="Usuarios">
+			<p:menuitem value="Nuevo Usuario" outcome="/Usuarios/NuevoUsuario.xhtml"></p:menuitem>
+			<p:menuitem value="Lista de Usuarios" outcome="/Usuarios/ListarUsuarios23.xhtml"></p:menuitem>
+			<p:menuitem value="Eliminar Usuarios" outcome="/Usuarios/EliminarUsuarios.xhtml"></p:menuitem>
+			<p:menuitem value="Modificar Usuarios" outcome="/Usuarios/ModificarUsuarios.xhtml"></p:menuitem>
+			<p:separator/>
+			
+		</p:submenu>
+		
+		
+		<p:submenu label="Salir">
+			<p:menuitem value="Salir" outcome="/Usuarios/login.xhtml"></p:menuitem>
+			
+			<p:separator/>
+			
+		</p:submenu>	
+	</p:menu>
+</h:form>
+			
+			
+			
+			
+	</div>
+	
+	<h:form>	
+		<p:growl id="growl" showDetail="true" sticky="true" />	
+		<p:panelGrid columns="1" style="margin: 0 auto">
+					<h:outputLabel for="menu"
+						value="Seleccione el ID del usuario a eliminar  " />
+     
+	       		<p:selectOneMenu value="#{usuario.id}">
+						<f:selectItems value="#{usuario.usuariosL}"
+							 var="usuarios" itemLabel="#{usuarios}" itemValue="#{usuarios}" style="margin: 0 auto" />
+
+
+				</p:selectOneMenu>
+			
+			
+			
+				<p:commandButton value="CONFIRMAR" action="#{usuario.eliminarUsuario()}" update="growl">
+						<p:confirm header="Confirmation" message="Realmente desea eliminar el usuario?" icon="pi pi-exclamation-triangle" />
+					
+				</p:commandButton>
+				<p:confirmDialog global="true" showEffect="fade" hideEffect="fade">
+        				<p:commandButton value="Si" type="button" styleClass="ui-confirmdialog-yes" icon="pi pi-check" />
+        				<p:commandButton value="No" type="button" styleClass="ui-confirmdialog-no" icon="pi pi-times" />
+   				</p:confirmDialog>    
+				 
+		</p:panelGrid>
+				
+		</h:form>				
+		</div>	
+		
+			
+			
+		
+		
+	
+	<div id="footer"><img src="img/logo-pie.png" width="200" height="40" />
+			<span style="diplay.none"></span>
+		</div>
+	</div>
+	
+</h:body> 
+</html>

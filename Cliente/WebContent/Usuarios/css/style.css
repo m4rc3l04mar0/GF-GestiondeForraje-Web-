@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header, #mainContent, #footer{
+	margin:0 auto;
+	width:1024px;
+} 
+
+#header{
+	height:100px;
+	margin-bottom:5px;
+	background:#31A1E0;
+	text-align:center;
+}
+
+#mainContent{
+	position:relative;
+	height:502px;
+	
+}
+
+#sidebar{
+	position:absolute;
+	top:0;
+	left:0;
+	width:250px;
+	height:500px;
+	
+}
+
+#content{
+	margin-left:234px;
+	width:790px;
+	height:499px;
+	
+}
+
+#footer{
+	height:60px;
+	text-align:center;
+}
+
+.buttonPanel{
+	text-align: center;
+	width:80%;
+	margin:0px auto;
+	
+}
+
+.panelGridCenter {
+    margin: 0 auto;
+}
+

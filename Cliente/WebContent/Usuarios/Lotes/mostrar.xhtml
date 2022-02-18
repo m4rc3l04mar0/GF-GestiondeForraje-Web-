@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"> 
+
+<h:head>
+	<title>Nuevo Lote</title>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</h:head> 
+<h:body> 
+		<div id="container">
+		<div id="header"><h1>Datos ingresados</h1></div>
+		<div id="mainContent">
+			<div id="sidebar">
+
+
+<h:form>
+  <p:growl>
+		<p:autoUpdate/>	
+	</p:growl>
+	<p:panelMenu style="width:200px">
+		<p:submenu label="Usuarios">
+			<p:menuitem value="Nuevo Usuario" outcome="/Usuarios/NuevoUsuario.xhtml"/>
+			<p:menuitem value="Listar Usuarios" outcome="/Usuarios/ListarUsuarios.xhtml"/>
+			
+		</p:submenu>
+		<p:submenu label="Predio">
+			<p:menuitem value="Nuevo Predio" outcome="/Usuarios/Predios/NuevoPredio.xhtml"/>
+			<p:menuitem value="Listar Predios" outcome="/Usuarios/Predios/ListarPredios.xhtml"/>
+		
+		</p:submenu>
+		<p:submenu label="Potrero">
+			<p:menuitem value="Nuevo Potrero" outcome="/Usuarios/Potreros/NuevoPotrero.xhtml"/>
+			<p:menuitem value="Listar Potreros" outcome="/Usuarios/Potreros/ListarPotreros.xhtml"/>
+		
+		</p:submenu>
+		<p:submenu label="Recorrida" outcome="/Usuarios/Recorridas/NuevaRecorrida.xhtml">
+			<p:menuitem value="Nueva Recorrida" outcome="/Usuarios/Recorridas/ListarRecorridas.xhtml"/>
+			<p:menuitem value="Listar Recorridas" />
+			
+		</p:submenu>
+		<p:submenu label="Lotes">
+			<p:menuitem value="Nuevo Lote" outcome="/Usuarios/Lotes/NuevoLote.xhtml"/>
+			<p:menuitem value="Listar Lotes" outcome="/Usuarios/Lotes/ListarLotes.xhtml"/>
+			
+		</p:submenu>
+		<p:submenu label="Salir">
+		<p:menuitem value="Salir" outcome="/Usuarios/login.xhtml">
+		</p:menuitem>
+		</p:submenu>
+	</p:panelMenu>	
+</h:form>
+			
+			
+			
+	</div>
+			
+		<div id="content">
+		<p:panelGrid columns="1">
+		<p:outputLabel value="Nombre: #{lote.nombre}"/>
+		<p:outputLabel value="Fecha: #{lote.fecha}"/>
+		<p:outputLabel value="Número de Animales: #{lote.nAnimales}"/>
+		<p:outputLabel value="Consumo de Forraje Animal: #{lote.consumoForrajeAnimal}"/>
+		<p:outputLabel value="Observaciones: #{lote.observaciones}"/>
+		
+		</p:panelGrid>
+	</div>
+		</div>
+		<div id="footer"><img src="img/logo-pie.png" width="200" height="40" />
+			<span style="diplay.none"></span>
+		</div>
+		
+	
+	</div>
+</h:body> 
+</html>

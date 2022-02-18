@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#login.xhtml" PATH="/login.xhtml"
+  SHAPE="32,17,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#login.xhtml:0" NAME="item"
+   PATH="/login.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="nuevoUsuario::#Usuarios#NuevoUsuario.xhtml"
+    NAME="output" PATH="/Usuarios/NuevoUsuario.xhtml"
+    TARGET="rules:#Usuarios#NuevoUsuario.xhtml" TITLE="nuevoUsuario" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarUsuarios::#Usuarios#ListarUsuarios.xhtml" NAME="output1"
+    PATH="/Usuarios/ListarUsuarios.xhtml"
+    TARGET="rules:#Usuarios#ListarUsuarios.xhtml" TITLE="listarUsuarios" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="nuevoPredio::#Usuarios#Predios#NuevoPredio.xhtml" NAME="output3"
+    PATH="/Usuarios/Predios/NuevoPredio.xhtml"
+    TARGET="rules:#Usuarios#Predios#NuevoPredio.xhtml"
+    TITLE="nuevoPredio" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarPredios::#Usuarios#Predios#ListarPredios.xhtml"
+    NAME="output2" PATH="/Usuarios/Predios/ListarPredios.xhtml"
+    TARGET="rules:#Usuarios#Predios#ListarPredios.xhtml"
+    TITLE="listarPredios" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="nuevoPotrero::#Usuarios#Potreros#NuevoPotrero.xhtml"
+    NAME="output4" PATH="/Usuarios/Potreros/NuevoPotrero.xhtml"
+    TARGET="rules:#Usuarios#Potreros#NuevoPotrero.xhtml"
+    TITLE="nuevoPotrero" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarPotreros::#Usuarios#Potreros#ListarPotreros.xhtml"
+    NAME="output5" PATH="/Usuarios/Potreros/ListarPotreros.xhtml"
+    TARGET="rules:#Usuarios#Potreros#ListarPotreros.xhtml"
+    TITLE="listarPotreros" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="nuevaRecorrida::#Usuarios#Recorridas#NuevoRecorrida.xhtml"
+    NAME="output6" PATH="/Usuarios/Recorridas/NuevoRecorrida.xhtml"
+    TARGET="rules:#Usuarios#Recorridas#NuevoRecorrida.xhtml"
+    TITLE="nuevaRecorrida" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="listarRecorridas::#Usuarios#Recorridas#ListarRecorridas.xhtml"
+    NAME="output7" PATH="/Usuarios/Recorridas/ListarRecorridas.xhtml"
+    TARGET="rules:#Usuarios#Recorridas#ListarRecorridas.xhtml"
+    TITLE="listarRecorridas" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="salir::#Usuarios#login.xhtml" NAME="output8"
+    PATH="/Usuarios/login.xhtml" TARGET="rules:#Usuarios#login.xhtml"
+    TITLE="salir" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Usuarios#ListarUsuarios.xhtml"
+  PATH="/Usuarios/ListarUsuarios.xhtml" SHAPE="288,241,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#NuevoUsuario.xhtml"
+  PATH="/Usuarios/NuevoUsuario.xhtml" SHAPE="288,33,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#login.xhtml"
+  PATH="/Usuarios/login.xhtml" SHAPE="288,353,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Predios#NuevoPredio.xhtml"
+  PATH="/Usuarios/Predios/NuevoPredio.xhtml" SHAPE="288,465,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Predios#ListarPredios.xhtml"
+  PATH="/Usuarios/Predios/ListarPredios.xhtml" SHAPE="304,305,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Potreros#ListarPotreros.xhtml"
+  PATH="/Usuarios/Potreros/ListarPotreros.xhtml" SHAPE="304,865,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Potreros#NuevoPotrero.xhtml"
+  PATH="/Usuarios/Potreros/NuevoPotrero.xhtml" SHAPE="304,753,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Recorridas#NuevoRecorrida.xhtml"
+  PATH="/Usuarios/Recorridas/NuevoRecorrida.xhtml" SHAPE="304,401,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#Usuarios#Recorridas#ListarRecorridas.xhtml"
+  PATH="/Usuarios/Recorridas/ListarRecorridas.xhtml" SHAPE="304,849,0,0" model-entity="JSFProcessGroup"/>
+</PROCESS>
